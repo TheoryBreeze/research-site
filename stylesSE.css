@@ -1,0 +1,86 @@
+/* ----------------- Class ----------------- */
+.about {
+  width: 400px;
+  margin: auto;
+}
+
+.about-team {
+  color: rgb(82, 81, 81);  
+}
+
+.authors {
+  background-color: #fff;
+}
+
+.footer {
+  background-color: #35005d;
+}
+
+.howTo {
+  font-size: 20px;
+}
+
+.icon-white {
+  color: white;
+}
+
+.nb-background-color { /* navbar background color */
+  background-color: #440079;
+}
+
+.nbMenuItem {
+  font-size: 1.125rem;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.showcase {
+  /* background-color: #35005d; */
+  background-image: linear-gradient(to bottom, #440079, #270046);
+}
+
+.overview {
+  background-color: #fff;
+}
+
+.ovPadLeft {
+  padding-left: 20px;
+}
+
+.ovPadRight {
+  padding-right: 20px;
+}
+
+.procedure {
+  background-color: #fff;
+  padding: 1px;
+}
+
+
+/* ----------------- ID ----------------- */
+
+
+/* ----------------- Underline Animation CSS -----------------*/
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  /*color: #0087ca;*/
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #eae6e6;
+  /*transform-origin: bottom right;*/
+  transition: transform 0.35s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  /*transform-origin: bottom left;*/
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Project</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="stylesSE.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous" defer></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark nb-background-color">
+    <!-- lg = large breakpoint, navbar-light = make text dark, header -->
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        <img src="img/logo.png" alt="Neural Network Logo"
+             class="d-inline-block align-text-top w-50">
+      </a>
+        
+      <!-- Hamburger Menu Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible nvbar menu with custom hover underline CSS animation -->
+      <div class="collapse navbar-collapse" id="navmenu">
+        <!-- Links to hamburger menu button -->
+        <ul class="navbar-nav ms-auto"> <!-- ms-auto is margin spacing-->
+          <li class="nav-item">
+            <a href="authors.html" class="nav-link hover-underline-animation nbMenuItem">Authors</a>
+          </li>
+          <li class="nav-item">
+            <a href="procedure.html" class="nav-link hover-underline-animation nbMenuItem">Procedure</a>
+          </li>
+          <li class="nav-item">
+            <a href="results.html" class="nav-link hover-underline-animation nbMenuItem">Results</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Showcase -->
+  <section class="showcase text-light p-2 pb-4 text-center"> <!-- showcase is custom CSS -->
+    <!-- headerBG = custom css BG color, p-2 = padding 8px -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 p-0 d-flex align-items-center">
+          <!-- img-fluid = won't expand image larger than container & will scale down if necessary -->
+          <img class="img-fluid" src="img/cnn-architecture.png" alt="CNN architecture">
+        </div>
+        <div class="col-sm-6 p-0 d-flex align-items-center">
+          <div class="container">
+            <h1 class="display-6 fw-bold">The size of kernels in a convolutional neural network and its effects on overfitting</h1>
+            <h2 class="fw-light">E. Yung, T. Pannapara, M. Rambaud</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="overview text-dark p-2 text-left">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 p-3">
+          <!-- pt-3 = padding top -->
+          <img class="img-fluid" src="img/eye.jpg" alt="Eye"> <!--https://arvrjourney.com/top-6-computer-vision-techniques-and-algorithms-changing-the-world-perception-7762b642c210-->
+        </div>
+        <div class="col-sm-8 p-3"> <!-- ovPadLeft = custom padding left side-->
+          <h1 class="ovPadLeft">Background</h1>
+          <p class="lead overfiew-font ovPadLeft">Convolutional neural networks, or CNNs, are networks that are mainly used for classification, audio, and computer vision tasks. CNNs have outperformed hand-crafted algorithms in image recognition as shown when compared to ImageNet (Russakovsky, Olga, et al.). They have convolutional layers which contain a specified number of filters, or kernels. Kernels are feature extractors, and they use many matrix operations to determine what configuration is the most optimal for the network in order to find useful features for classification. For example, if a model was trying to distinguish between an image of an “X” or circle, one filter may look for cross-like features while another may look for curves. The sizes of kernels could be changed, which is the focus of this research.</p>
+        </div>
+        <div class="row">
+          <div class="col-sm-8 p-3">
+            <h1 class="ovPadRight">Rationale</h1>
+            <p class="lead overfiew-font ovPadRight">Overfitting is a problem that many computer science engineers and data scientists face when trying to create a model that learns from training data and accurately classifies or predicts future observations. It occurs when a model nearly exactly fits the training data and learns noise. This leads to it not being able to generalize well with new data and therefore would not be able to classify new data as well. Regularization is the process of preventing overfitting. This research aims to optimize the size of kernels, one of the many hyperparameters of a CNN, in order to reduce overfitting.</p>
+          </div>
+          <div class="col-sm-4 p-3">
+            <img class="img-fluid" src="img/kernel.png" alt="CNN kernels"> <!--https://stats.stackexchange.com/questions/239076/about-cnn-kernels-and-scale-rotation-invariance-->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 p-3">
+            <!-- pt-3 = padding top -->
+            <img class="img-fluid" src="img/research.jpg" alt="Research"> <!--https://unsplash.com/photos/pwcKF7L4-no-->
+          </div>
+          <div class="col-sm-8 p-3">
+            <h1 class="ovPadLeft">Research Practicum</h1>
+            <p class="lead overfiew-font ovPadLeft">Research Practicum is a sophomore year course that marks the final chapter of required research at High Tech. For an entire semester, students are given time to meet with faculty mentors, conduct their experiments, and statistically analyze their results. Students then write a conclusive research paper, integrating their work from both freshman and sophomore years. Approximately 50% of the class then goes on to compete in various research competitions. In addition to research and data analysis skills, students will develop skills in communication, punctuality, time management, organization, decision making, resource allocation, ethical competition, and safety. (<a href="https://www.hths.mcvsd.org/research" target="_blank">HTHS Website</a>)</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (requires Bootstrap Icons CSS) -->
+  <footer class="p-5 footer text-light text-center position-relative">
+    <div class="container">
+      <p class="lead">Copyright &copy;2023</p>
+      <a href="#" class="position-absolute bottom-0 end-0 p-5">
+        <i class="bi bi-arrow-up-circle h2 icon-white"></i>
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
