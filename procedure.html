@@ -67,7 +67,7 @@
             <th scope="row" class="table-secondary">
               <h3>1</h3>
             </th> <!-- scope="row" specifies header cell is the header for a row -->
-            <td>
+            <td class="text-start px-3 py-3">
               <h3><strong>Preprocessing:</strong> MNIST images were grayscaled, normalized, and resized to make them suitable for kernel operations</h3>
             </td>
             <td class="text-center"><img src="img/mnist.jpg" alt="MNIST dataset" width="400"></td>
@@ -76,7 +76,7 @@
             <th scope="row" class="table-secondary">
               <h3>2</h3>
             </th>
-            <td>
+            <td class="text-start px-3 py-3">
               <h3>Set kernel size (3x3, 5x5, or 7x7)</h3>
             </td>
             <td class="text-center"><img src="img/kernel_calculations.gif" alt="Kernel calculations" width="400"></td>
@@ -85,7 +85,7 @@
             <th scope="row" class="table-secondary">
               <h3>3</h3>
             </th>
-            <td>
+            <td class="text-start px-3 py-3">
               <h3><strong>Feature extraction:</strong> convolution (64 filters) + ReLU → 2x2 max pooling → convolution (64 filters) + ReLU → 2x2 max pooling → flattening</h3>
             </td>
             <td class="text-center"><img src="img/feature-extraction.png" alt="Feature extraction" width="400"></td>
@@ -94,7 +94,7 @@
             <th scope="row" class="table-secondary">
               <h3>4</h3>
             </th>
-            <td>
+            <td class="text-start px-3 py-3">
               <h3><strong>Feature classification:</strong> fully connected layer (64 neurons) w/ dropout (p = 0.5) + ReLU → fully connected layer (32 neurons) w/ dropout (p = 0.5) + ReLU → output layer (10 neurons) + softmax activation</h3>
             </td>
             <td class="text-center"><img src="img/feature-classification.png" alt="Feature classification" width="200"></td>
@@ -103,7 +103,7 @@
             <th scope="row" class="table-secondary">
               <h3>5</h3>
             </th>
-            <td>
+            <td class="text-start px-3 py-3">
               <h3>Repeat steps 2-4 for all kernel sizes.</h3>
             </td>
             <td class="text-center"><img src="img/repeat.png" alt="Repeat" width="100"></td>
@@ -112,7 +112,7 @@
             <th scope="row" class="table-secondary">
               <h3>6</h3>
             </th>
-            <td>
+            <td class="text-start px-3 py-3">
               <h3><strong>Training</strong><br>
                 Loss function: sparse categorical cross entropy<br>
                 Optimizer: Adam<br>
@@ -126,7 +126,7 @@
             <th scope="row" class="table-secondary">
               <h3>7</h3>
             </th>
-            <td>
+            <td class="text-start px-3 py-3">
               <h3><strong>Data analysis:</strong> Microsoft Excel was used to calculate mean, standard deviation, and variance for the accuracy and loss data. A single factor ANOVA test was used to determine statistical significant difference. If a significant difference was found, Tukey's Range Test was performed as a post hoc analysis to determine the significant difference between the groups.</h3>
             </td>
             <td class="text-center"><img src="img/excel_logo.png" alt="Excel logo" width="100"></td>
