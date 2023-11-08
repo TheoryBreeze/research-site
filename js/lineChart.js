@@ -3,8 +3,8 @@
 */
 
 async function getData() {
-  const acc = await fetch("../data/acc_by_kernel.csv");
-  const loss = await fetch("../data/loss_by_kernel.csv");
+  const acc = await fetch("./data/acc_by_kernel.csv");
+  const loss = await fetch("./data/loss_by_kernel.csv");
   const accCsv = await acc.text();
   const lossCsv = await loss.text();
 
